@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard.component';
 import { AttendanceComponent } from './components/attendance/attendance.component';
 import { LeaveComponent } from './components/leave/leave.component';
 import { TimesheetComponent } from './components/timesheet/timesheet.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -15,7 +16,9 @@ import { TimesheetComponent } from './components/timesheet/timesheet.component';
     TimesheetComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class DashboardModule { }
