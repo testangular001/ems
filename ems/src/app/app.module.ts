@@ -3,14 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AuthComponent } from './auth/auth.component';
+import { AuthModule } from './auth/auth.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
